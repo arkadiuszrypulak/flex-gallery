@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+body {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.panels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.panel {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  transition: font-size 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    color 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.panel > * {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  transition: transform 0.5s;
+}
+
+.panel p {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.panel p:nth-child(2) {
+  font-size: 6rem;
+}
+
+.panel p:first-child {
+  transform: translateY(-100%);
+}
+.panel.full-view p:first-child {
+  transform: translateY(0);
+}
+
+.panel p:last-child {
+  transform: translateY(100%);
+}
+.panel.full-view p:last-child {
+  transform: translateY(0);
+}
+
+.open {
+  font-size: 5rem;
+  flex: 5;
+  color: rgb(223, 223, 223)
+}
+
+.panel-1 {
+  background-image: url("https://images.unsplash.com/photo-1592903204858-e288251ad9cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z29pbmd8ZW58MHx8MHx8&w=1000&q=80");
+}
+
+.panel-2 {
+  background-image: url("https://i.pinimg.com/originals/d3/45/11/d3451114ab4e1d55ead624930bcff60c.jpg");
+}
+
+.panel-3 {
+  background-image: url("https://media.kidadl.com/large_who_is_the_king_of_the_jungle_cd2a6d4461.jpg");
+}
+
+.panel-4 {
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/6058b1eed388d3a4a0831d09/960x0.jpg?format=jpg&width=960");
+}
+.panel-5 {
+  background-image: url("https://images.unsplash.com/photo-1543489816-c87b0f5f7dd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3RyaWN8ZW58MHx8MHx8&w=1000&q=80");
+}
